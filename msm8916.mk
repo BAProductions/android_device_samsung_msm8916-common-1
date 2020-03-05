@@ -340,6 +340,10 @@ PRODUCT_PACKAGES += \
 #    android.hardware.vibrator@1.0-impl \
 #    android.hardware.vibrator@1.0-service
 
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q660-13149-1
+
 # Wifi configuration files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/cred.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/cred.conf \
