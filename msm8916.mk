@@ -505,6 +505,10 @@ PRODUCT_PACKAGES += \
     thermal.msm8916
 
 # Time services
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
