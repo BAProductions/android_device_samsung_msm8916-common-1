@@ -330,6 +330,14 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
+# Time services
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.timed.enable=true
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
